@@ -7,7 +7,7 @@ Blocking code 실행시 thread가 block 된다.
 
 개발자가 Thread를 직접 통제하지 않는다.
 Thread는 Event Loop만을 실행한다.
-개발자는 Event Loop에 특정 event 발생 시 수행할 event handler를 제출한다.
+개발자는 Event Loop에 특정 event 발생 시 수행할 event handler를 등록한다.
 Event Loop Thread는 event queue를 갖고있다.
 Event Loop Thread는 event queue에서 event를 하나씩 꺼내며,
 해당 event handler를 실행한다.
