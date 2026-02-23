@@ -28,7 +28,7 @@ event handler를 signal handler라고 부른다.
 기본 Event Loop Thread는 따라서 Netty Event Loop Threads를 사용한다.  
 Event Loop Threads는 Scheduler라는 단위로 통제하며,  
 명시적으로 다른 Scheduler에 stream을 할당할 수 있다.  
-I/O bound blocking code를 실행하야 하는 경우, 해당 stream은 Schedulers.boundedElastic()에 할당한다.  
+I/O bound blocking code를 실행해야 하는 경우, 해당 stream은 Schedulers.boundedElastic()에 할당한다.  
 CPU bound blocking code를 실행해야 하는 경우, 해당 stream은 Schedulers.parallel()에 할당한다.
 단일 thread에서 실행하는 것이 중요한 경우, 해당 stream은 Schedulers.single()에 할당한다.
 Schedulers.boundedElastic() 에서 blocking I/O job이 끝나고, 다시 non-blocking code만을 실행하고 싶은 경우,  
